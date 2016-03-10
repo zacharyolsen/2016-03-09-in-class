@@ -12,7 +12,7 @@ h1 {
   margin-bottom: 20px;
   border-top: 15px solid #006666;
   color: white;
-  font-size: 5em;
+  font-size: 2em;
   font-family: 'Amatic SC', cursive;
 }
 h1 + h2 {
@@ -33,4 +33,20 @@ img {
 p img {
   float: right;
   width: 100px;
+}
+@media screen and (min-width: 550px) {
+  body {
+    font-size: 1.1em;
+  }
+  h1 {
+    font-size: 5em;
+  }
+}
+.page-container {
+  width: 80%;
+}
+@media screen and (min-width: 900px) {
+  body {
+    font-size: 1.2em;
+  }
 }
