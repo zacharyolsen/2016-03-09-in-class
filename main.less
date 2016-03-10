@@ -1,19 +1,24 @@
 // out: css/main.css, sourcemap: true
-@logo-red: darken(red, 30%);
+@logo-red: darken(cyan, 30%);
 @logo-red-mute: desaturate(@logo-red, 50%);
 @logo-red-light: lighten(@logo-red, 70%);
 
 
 //TYPE VARIABLES
-@regular: 16px;
-@large: @regular * 1.5;
-@x-large: @large * 2;
+@regular: 1em;
+@large: @regular * 2;
+@x-large: @large * 2.5;
 
 body {
   background-color: @logo-red-mute;
   font-size: @regular;
   color: @logo-red-light;
   font-family: 'Pacifico', cursive;
+}
+
+.page-container {
+  width: 90%;
+  margin: 0 auto;
 }
 
 h1 {
@@ -25,6 +30,8 @@ h1 {
 
   +h2 {
     margin-top: -20px;
+    font-family: 'Amatic SC', cursive;
+
   }
 
 }
@@ -41,7 +48,7 @@ h2 {
 
 img {
   float:left;
-  width: 300px;
+  width: 30%;
   margin: 20px 20px 20px 0px
 }
 
