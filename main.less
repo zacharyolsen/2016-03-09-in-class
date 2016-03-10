@@ -1,8 +1,15 @@
 // out: css/main.css, sourcemap: true
-@brick: darken(red, 30%);
-@brick-mute: desaturate(@brick, 50%);
+@logo-red: darken(red, 30%);
+@logo-red-mute: desaturate(@logo-red, 50%);
+@logo-red-light: lighten(@logo-red, 70%);
 
 
 body {
-  background-color: @brick-mute;
+  background-color: @logo-red-mute;
+  color: @logo-red-light;
+}
+
+h1 {
+  border-top: 15px solid @logo-red;
+  color: white;
 }
