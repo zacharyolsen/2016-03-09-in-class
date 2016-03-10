@@ -4,12 +4,34 @@
 @logo-red-light: lighten(@logo-red, 70%);
 
 
+//TYPE VARIABLES
+@regular: 16px;
+@large: @regular * 1.5;
+@x-large: @large * 2;
+
 body {
   background-color: @logo-red-mute;
+  font-size: @regular;
   color: @logo-red-light;
 }
 
 h1 {
+  margin-bottom: 20px;
   border-top: 15px solid @logo-red;
   color: white;
+  font-size: @x-large;
+
+  +h2 {
+    margin-top: -20px;
+  }
+
+}
+
+
+h2 {
+  font-size: @large;
+
+  + p {
+    margin-top: 36px;
+  }
 }
